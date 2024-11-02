@@ -17,7 +17,7 @@ const (
 )
 
 type Task struct {
-    Id              uuid.UUID
+    ID              uuid.UUID
     Name            string
     State           State
     Image           string
@@ -31,7 +31,7 @@ type Task struct {
 }
 
 type TaskEvent struct {
-    Id          uuid.UUID
+    ID          uuid.UUID
     State       State
     Timestamp   time.Time
     Task        Task

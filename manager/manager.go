@@ -1,6 +1,8 @@
 package manager
 
 import (
+	"fmt"
+
 	"github.com/golang-collections/collections/queue"
 	"github.com/google/uuid"
 	"github.com/haveheartt/orchestrator-from-scratch/task"
@@ -15,10 +17,16 @@ type Manager struct {
     TaskWorkerMap   map[uuid.UUID]string
 }
 
-func (m *Manager) SelectWorker() {}
+func (m *Manager) SelectWorker() {
+    fmt.Println("i will select an appropriate worker")
+}
 
-func (m *Manager) UpdateTasks() {}
+func (m *Manager) UpdateTasks() {
+    fmt.Println("i will update tasks")
+}
 
-func (m *Manager) SendWork() {}
+func (m *Manager) SendWork() {
+    fmt.Println("i will send work to workers")
+}
 
 
